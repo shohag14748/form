@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="application-form">
+        <form action="" id="application-form" method="post">
+            <div class="main-steps">
+                <div class="main-step first main-step-active">
+                    <div class="title">
+                        <h2>Pick your type of car</h2>
+                    </div>
+                    <div class="content">
+                        <div id="carousel">
+                            <div class="cars">
+                                <div class="pics pic1" id="Truck"><img src="images/black-truck.png" alt=""></div>
+                                <div class="pics pic2" id="Car"><img src="images/blue-car.png" alt=""></div>
+                                <div class="pics pic3" id="SUV"><img src="images/red-suv.png" alt=""></div>
+                                <div class="pics pic4" id="Van"><img src="images/white-van.png" alt=""></div>
+                            </div>
+                            <div id="buttons">
+                                <div class="btn-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" /></svg>
+                                </div>
+                                <div class="btn-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" /></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vehicle-type-inputs">
+                        <input type="radio" name="vehicle-type" id="Truck" value="Truck" checked>
+                        <input type="radio" name="vehicle-type" id="Car" value="Car">
+                        <input type="radio" name="vehicle-type" id="SUV" value="SUV">
+                        <input type="radio" name="vehicle-type" id="Van" value="Van">
+                    </div>
+                    <div class="button-wrap">
+                        <a href="" class="button vehicle-type-button">I Want a <span>Truck</span></a>
+                    </div>
+                </div>
+                <div class="main-step">
+
+                    <div class="steps-position">
+                        <div class="line"><span></span></div>
+                        <ul>
+                            <li class="active first">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" /></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z" /></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" /></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M14 6V4h-4v2h4zM4 8v11h16V8H4zm16-2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2h4z" fill-rule="evenodd" /></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z" /></svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M16.7,15.8c-1.1,0-2.2-0.2-3.3-0.5c-0.3-0.1-0.7,0-0.9,0.2l-1.5,1.8C8.5,16.1,6,13.7,4.7,11l1.8-1.5c0.2-0.3,0.3-0.6,0.2-0.9c-0.3-1-0.5-2.1-0.5-3.3c0-0.5-0.4-0.9-0.9-0.9H2.1C1.6,4.3,1,4.6,1,5.3C1,13.9,8.2,21,16.7,21c0.7,0,0.9-0.6,0.9-1.1v-3.2C17.7,16.2,17.2,15.8,16.7,15.8z" />
+                                    <path d="M21.8,3.9h-7.8c-0.5,0-1,0.4-1,1l0,5.8c0,0.5,0.4,1,1,1h7.8c0.5,0,1-0.4,1-1V4.8C22.8,4.3,22.3,3.9,21.8,3.9z M21.8,10.7h-7.8V5.8l3.9,2.4l3.9-2.4V10.7z M17.9,7.3l-3.9-2.4h7.8L17.9,7.3z" /></svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inner-steps">
+                        <div class="inner-step first inner-step-active">
+                            <div class="title">
+                                <h2>What is your budget?</h2>
+                            </div>
+                            <div class="contents">
+                                <div class="input-wrap">
+                                    <input type="radio" name="budget" id="budget1" value="$250 - 374 / month" checked>
+                                    <label for="budget1">$250 - 374 / month</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="budget" id="budget2" value="$250 - 374 / month">
+                                    <label for="budget2">$250 - 374 / month</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="budget" id="budget3" value="$375 - 500 / month">
+                                    <label for="budget3">$375 - 500 / month</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="budget" id="budget4" value="Over $500 / month">
+                                    <label for="budget4">Over $500 / month</label>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <a href="" class="button continueButton">Continue</a>
+                            </div>
+                        </div>
+                        <div class="inner-step">
+                            <div class="title">
+                                <h2>Do you have a trade in?</h2>
+                            </div>
+                            <div class="contents">
+                                <div class="input-wrap">
+                                    <input type="radio" name="trade" id="trade1" value="Yes" checked>
+                                    <label for="trade1">Yes</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="trade" id="trade2" value="No">
+                                    <label for="trade2">No</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="trade" id="trade3" value="Unsure">
+                                    <label for="trade3">Unsure</label>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <a href="" class="button continueButton">Continue</a>
+                            </div>
+                        </div>
+                        <div class="inner-step">
+                            <div class="title">
+                                <h2>What is your estimated credit rating?</h2>
+                            </div>
+                            <div class="contents">
+                                <div class="input-wrap">
+                                    <input type="radio" name="estimatedcr" id="estimatedcr1" value="Good (Over 650)" checked>
+                                    <label for="estimatedcr1">Good (Over 650)</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="estimatedcr" id="estimatedcr2" value="Fair (550-650)">
+                                    <label for="estimatedcr2">Fair (550-650)</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="estimatedcr" id="estimatedcr3" value="Poor (Under 550)">
+                                    <label for="estimatedcr3">Poor (Under 550)</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="estimatedcr" id="estimatedcr4" value="Current Bankruptcy">
+                                    <label for="estimatedcr4">Current Bankruptcy</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="estimatedcr" id="estimatedcr5" value="No Credit / Unsure">
+                                    <label for="estimatedcr5">No Credit / Unsure</label>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <a href="" class="button continueButton">Continue</a>
+                            </div>
+                        </div>
+                        <div class="inner-step">
+                            <div class="title">
+                                <h2>What is your employment status?</h2>
+                            </div>
+                            <div class="contents">
+                                <div class="input-wrap">
+                                    <input type="radio" name="employmentstatus" id="employmentstatus1" value="Employed" checked>
+                                    <label for="employmentstatus1">Employed</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="employmentstatus" id="employmentstatus2" value="Self-Employed">
+                                    <label for="employmentstatus2">Self-Employed</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="employmentstatus" id="employmentstatus3" value="Student">
+                                    <label for="employmentstatus3">Student</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="employmentstatus" id="employmentstatus4" value="Retired / Pension">
+                                    <label for="employmentstatus4">Retired / Pension</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="radio" name="employmentstatus" id="employmentstatus5" value="Other">
+                                    <label for="employmentstatus5">Other</label>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <a href="" class="button continueButton">Continue</a>
+                            </div>
+                        </div>
+                        <div class="inner-step">
+                            <div class="title">
+                                <h2>What's your name?</h2>
+                            </div>
+                            <div class="contents">
+                                <div class="text-input-wrap">
+                                    <p class="error">* this field is required</p>
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name"><span>Name</span></label>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <a href="" class="button continueButton namecontinueButton">Continue</a>
+                            </div>
+                        </div>
+                        <div class="inner-step">
+                            <div class="title">
+                                <h2>Best way to contact you?</h2>
+                            </div>
+                            <div class="contents">
+                                <div class="text-input-wrap">
+                                    <p class="error">* this field is required</p>
+                                    <input type="text" id="email" name="email" required>
+                                    <label for="email"><span>Email</span></label>
+                                </div>
+                                <div class="text-input-wrap">
+                                    <p class="error">* this field is required</p>
+                                    <input type="text" id="phone" maxlength="10" name="phone" required>
+                                    <label for="phone"><span>Phone</span></label>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <button type="submit" class="button submit-button">Get Pre-Approval</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome">
+                <div class="content">
+                    <div class="icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                        </svg>
+                    </div>
+                    <h3>Congratulations</h3>
+                    <p>Form Submission Successfull</p>
+                    <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nulla, necessitatibus quas magnam vel deserunt harum delectus quam rerum, placeat dignissimos quibusdam similique sed dicta totam officia quod ipsa vero.</small></p>
+                    <a href="" class="confirm">Confirm</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body></html>

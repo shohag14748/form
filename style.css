@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.application-form {
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#carousel {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    height: 400px;
+    background: #fff;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#carousel .pics {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transition: all 0.6s 0s ease-out;
+}
+
+#carousel .pics img {
+    width: 100%;
+    cursor: pointer;
+}
+
+#carousel .pic1 {
+    transform: translate(-110%, -50%) scale(1.15);
+    z-index: 3;
+}
+
+#carousel .pic2 {
+    z-index: 2;
+    opacity: 0.6;
+    transform: translate(-15%, 20%) scale(0.6);
+}
+
+#carousel .pic3 {
+    transform: translate(30%, -45%) scale(0.7);
+    z-index: 1;
+    opacity: .7;
+}
+
+#carousel .pic4 {
+    transform: translate(-35%, -130%) scale(.8);
+    z-index: 1;
+    opacity: 0.8;
+}
+#carousel #buttons {
+    display: none;
+}
+
+.vehicle-type-inputs {
+    display: none;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.main-steps {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.main-step {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    opacity: 0;
+    top: 0;
+    background: #fff;
+    padding: 40px;
+}
+
+.inner-step.inner-step-active,
+.main-step.main-step-active {
+    display: block;
+    animation: form-slide-in-right .5s ease-out;
+    left: 0;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+
+@keyframes form-slide-in-right {
+    0% {
+        transform: translate(60%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+
+.inner-step.first,
+.main-step.first {
+    position: relative !important;
+    animation: none;
+    opacity: 1 !important;
+    display: block;
+    left: 0;
+    top: 0;
+}
+
+.main-step.complete {
+    left: 0;
+    display: block;
+    animation: form-slide-out-left .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes form-slide-out-left {
+    0% {
+        transform: translate(0%);
+        opacity: 1;
+    }
+
+    99% {
+        transform: translate(-40%);
+        opacity: 0;
+        display: block;
+    }
+
+    100% {
+        transform: translate(-40%);
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+
+.button-wrap {
+    text-align: center;
+}
+
+.button-wrap .button {
+    padding: 15px 20px;
+    display: block;
+    background: #000;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+    background: #ffa500;
+}
+
+
+
+.steps-position {
+    max-width: 500px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.steps-position ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps-position .line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: #e9e9e9;
+    top: 18px;
+    z-index: -1;
+}
+
+.steps-position .line span {
+    width: 0%;
+    height: 4px;
+    display: block;
+    background: #ffa500;
+    position: relative;
+    z-index: 9;
+    transition: .5s;
+}
+
+.steps-position ul li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: #e9e9e9;
+    border-radius: 50%;
+}
+.steps-position ul svg {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.steps-position ul svg path{
+    fill: #ffa500;
+}
+
+.steps-position ul li.active {  
+    background: #ffa500;
+    transition: background .5s ease;
+    transition-delay: .5s;
+}
+
+.steps-position ul li.active.first {
+    background: #ffa500;
+}
+.steps-position ul li.active.first path{
+    fill:#fff;
+}
+.steps-position ul li.active svg path{
+    fill: #fff;
+    transition: all .5s ease;
+    transition-delay: .5s;
+}
+
+@keyframes col {
+    100% {
+        background: #ffa500;
+        color: #fff;
+    }
+}
+
+
+
+.inner-steps {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 650px;
+}
+
+.inner-steps .inner-step {
+    padding: 30px 25px;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    display: none;
+    border: 0px solid #ffa500;
+    border-bottom-width: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.inner-steps h2 {
+    font-size: 25px;
+    padding: 15px 0 30px;
+}
+
+.inner-step.complete {
+    left: 0;
+    display: block;
+    animation: form-slide-out-left .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes form-slide-out-left {
+    0% {
+        transform: translate(0%);
+        opacity: 1;
+    }
+
+    99% {
+        transform: translate(-40%);
+        opacity: 0;
+        display: block;
+    }
+
+    100% {
+        transform: translate(-40%);
+        opacity: 0;
+        display: none;
+    }
+}
+
+.inner-steps .inner-step.inner-step-active {
+    left: 0;
+    display: block;
+}
+
+.options {
+    overflow: hidden;
+}
+
+.inner-steps .inner-step .contents {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.inner-steps .inner-step .contents .input-wrap {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.inner-steps .inner-step .button {
+    display: block;
+    padding: 12px 20px;
+    background: #ffa500;
+    font-size: 16px;
+    max-width: 150px;
+}
+
+.inner-steps .inner-step .submit-button {
+    max-width: 230px;
+    display: block !important;
+    border: 0;
+}
+
+.inner-steps button {
+    border: 0;
+    cursor: pointer;
+}
+
+
+.input-wrap {
+    position: relative;
+}
+
+.input-wrap input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.input-wrap label {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    padding: 15px 15px;
+    margin: 10px auto 20px;
+    z-index: 9;
+    line-height: 35px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #999;
+    text-align: center;
+    background: #f9f9f9;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, .1);
+}
+
+.input-wrap:hover label {
+    color: #555;
+    background: #e9e9e9;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+}
+
+.input-wrap label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 4px solid #d9d9d9;
+    height: 0px;
+    width: 100%;
+    bottom: -3px;
+    left: 0px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.input-wrap:hover label::after {
+    border-color: #c9c9c9;
+}
+
+.input-wrap label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 4px solid #bbbbbb;
+    height: 0px;
+    width: 0%;
+    bottom: -3px;
+    left: 0px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.input-wrap input[type=radio]:checked ~ label::after {
+    border-color: #ffa500;
+    width: 100%;
+}
+
+
+.input-wrap input[type=radio]:checked ~ label {
+    color: #ffa500 !important;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
+}
+
+
+.text-input-wrap {
+    max-width: 400px;
+    width: 100%;
+    margin: 10px auto;
+    border-bottom: 4px solid #e9e9e9;
+    position: relative;
+}
+
+.text-input-wrap label {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.text-input-wrap label span {
+    display: block;
+    position: absolute;
+    top: 18px;
+    font-size: 16px;
+    pointer-events: none;
+    left: 20px;
+    transition: .3s;
+    color: #aaaaaa;
+}
+
+.text-input-wrap label {
+    position: absolute;
+    width: 100%;
+}
+
+.text-input-wrap label.active span {
+    color: #ffa500;
+    top: 0;
+    font-size: 12px;
+}
+
+.text-input-wrap .error {
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: red;
+    display: none;
+}
+
+.text-input-wrap .error.active,
+.text-input-wrap .error.show {
+    display: block;
+}
+
+.text-input-wrap input {
+    width: 100%;
+    display: block;
+    padding: 25px 20px 15px;
+    border: 0px;
+    background: #f9f9f9;
+}
+
+
+.text-input-wrap input[type=text]:focus ~ label span {
+    color: #ffa500 !important;
+    top: 0;
+    font-size: 12px;
+}
+
+.text-input-wrap label.active::after,
+.text-input-wrap input[type=text]:focus ~ label::after {
+    content: '';
+    width: 100%;
+    height: 0;
+    border-bottom: 4px solid #ffa500;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    transition: .3s;
+}
+
+
+
+.welcome {
+    position: fixed;
+    width: 100vw;
+    background: rgba(255, 255, 255, .5);
+    height: 100vh;
+    color: #fff;
+    left: 0%;
+    top: 0%;
+    transition: .3s;
+    z-index: 99999;
+    transform: scale(0);
+}
+
+.welcome.active {
+    display: block;
+    transform: scale(1);
+}
+
+.welcome .content {
+    background: #ffa500;
+    max-width: 350px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .5s;
+}
+
+.welcome.active .content {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.welcome .content .icon {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.welcome .content svg path {
+    fill: #ffa500;
+}
+
+.welcome .content h3 {
+    font-size: 20px;
+}
+
+.welcome .content p {
+    font-size: 14px;
+}
+
+.welcome .content p small {
+    font-size: 11px;
+    margin-top: 30px;
+    display: block
+}
+
+.welcome .content a {
+    display: inline-block;
+    color: #ffa500;
+    background: #fff;
+    padding: 8px 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+@media (max-width:700px) {
+    .main-steps {
+        padding: 0px !important;
+    }
+
+    .main-step {
+        padding: 20px !important;
+    }
+    .inner-steps .inner-step .contents {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .inner-steps .inner-step .contents .input-wrap {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .input-wrap label {
+        margin: 10px auto;
+        padding: 10px 15px;
+        font-size: 16px;
+        max-width: 400px
+    }
+
+    .steps-position {
+        margin: 10px auto !important;
+        width: calc(100% - 60px);
+    }
+
+    .inner-steps {
+        padding: 0px !important;
+    }
+
+    .inner-steps .inner-step {
+        padding: 20px 25px;
+    }
+
+    .inner-steps h2 {
+        font-size: 22px;
+        padding: 10px 0 15px;
+    }
+
+    .inner-steps .inner-step .button {
+        padding: 10px 15px;
+        font-size: 14px;
+        max-width: 120px;
+    }
+
+    .inner-steps .inner-step .submit-button {
+        max-width: 155px;
+    }
+
+    #carousel #buttons {
+        display: block;
+    }
+    #carousel #buttons .btn-left,
+    #carousel #buttons .btn-right{
+        position: absolute;
+        top: calc(50% - 15px);
+        cursor: pointer;
+        z-index: 99999;
+    }
+    #carousel #buttons .btn-right{
+        right: 0;
+    }
+    #carousel #buttons svg {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        background: #e9e9e9;
+        transition: .3s;
+    }
+    #carousel #buttons svg path{
+        fill:#999;
+        transition: .3s;
+    }
+    #carousel #buttons svg:hover{
+        background: #ffa500
+    }
+    #carousel #buttons svg:hover path{
+        fill:#fff;
+    }
+    #carousel {
+        max-width: 450px;
+        height: 250px;
+        overflow: hidden;
+    }
+    #carousel .pics {
+        display: block;
+        position: absolute;
+        width: 40%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transition: none;
+    }
+
+    #carousel .pic1 {
+        transform: translate(-50%, -50%) scale(2);
+        z-index: 3;
+        transition: all 0.6s 0s ease-out;
+    }
+
+    #carousel .pic2 {
+        z-index: 2;
+        opacity: 0.6;
+        transform: translate(180%, -50%) scale(2);
+        transition: all 0.6s 0s ease-out;
+    }
+
+    #carousel .pic3 {
+        transform: translate(-50%, -50%) scale(2);
+        z-index: -1;
+        opacity: 0;
+        display: none;
+    }
+    #carousel .pic4 {
+        transform: translate(-280%, -50%) scale(2);
+        z-index: 1;
+        opacity: 0.8;
+        transition: all 0.6s 0s ease-out;
+    }
+
+}
+
+
+
+@media (max-width:500px) {
+    .button-wrap .button {
+        padding: 10px 15px;
+        max-width: 200px;
+        font-size: 18px;
+    }
+    .inner-steps h2 {
+        font-size: 16px;
+        padding: 0px 0 10px;
+    }
+    .inner-steps .inner-step {
+        padding: 15px 25px;
+    }
+    .input-wrap label {
+        margin: 5px auto;
+        padding: 5px 15px;
+        font-size: 14px;
+        max-width: 400px
+    }
+    .steps-position ul li,
+    .steps-position ul svg {
+        width: 30px;
+        height: 30px;
+    }
+    .steps-position ul svg {
+        padding: 7px;
+    }
+    .steps-position .line {
+        height: 3px;
+        top: 13.5px;
+    }
+    .steps-position .line span{
+        height: 3px;
+    }
+}
