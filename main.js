@@ -87,7 +87,7 @@ function nameset(cid) {
 }
 
 window.addEventListener('resize', function (e) {
-    if (window.innerWidth < 500) {
+    if (window.innerWidth < 768) {
         cid = 0;
         document.getElementById('Truck').className = 'pics pic1';
         document.getElementById('Car').className = 'pics pic2';
@@ -96,6 +96,7 @@ window.addEventListener('resize', function (e) {
         document.querySelector('.vehicle-type-button span').innerHTML = 'Truck';
     }
 });
+
 document.querySelector('.vehicle-type-button').addEventListener('click', function (e) {
     e.preventDefault();
     var nodes = Array.prototype.slice.call(document.querySelector('.main-steps').children),
