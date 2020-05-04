@@ -87,7 +87,7 @@ function nameset(cid) {
 }
 
 window.addEventListener('resize', function (e) {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 78) {
         cid = 0;
         document.getElementById('Truck').className = 'pics pic1';
         document.getElementById('Car').className = 'pics pic2';
