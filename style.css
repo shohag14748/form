@@ -574,8 +574,7 @@
     border-radius: 4px;
 }
 
-
-@media (max-width:700px) {
+@media only screen and (max-width: 768px) {
     .main-steps {
         padding: 0px !important;
     }
@@ -703,8 +702,7 @@
 }
 
 
-
-@media (max-width:500px) {
+@media only screen and (max-width: 576px) {
     .button-wrap .button {
         padding: 10px 15px;
         max-width: 200px;
